@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>
+    forms</title></head>
+<body>
+    <form>
+        <label for="address">Address:</label>
+      <input type="text" name="address" placeholder="address" id="address" width="30px">
+        <br/>
+        <label for="postcode">Postcode:</label>
+        <input type="text" name="postcode" placeholder="postcode" id="postcode" width="30px">
+        <br/>
+        <label for="city">City:</label>
+        <input type="text" name="city" placeholder="city" id="city" width="30px">
+        <p>choose your shipping method:</p>
+        <select name="shipping" id="shipping">
+        <option value="free super saving shipping">free super saving shipping</option>
+        <option value="two day shipping"> two day shipping</option>
+            <option value="one day shipping">one  day shipping</option>
+        </select>
+        <p>choose your payment method:</p>
+        <label>paypal</label>
+        <input type="radio" name="payment" value="paypal" >
+        <label >debit card</label>
+        <input type="radio" name="payment" value="debit card">
+        <label>net banking</label>
+        <input type="radio" name="payment" value="netbanking"><br/>
+        <label for="comment"> Comment:</label>
+        <textarea rows="4" cols="30" name="comment" id="comment"></textarea>
+        <br/>
+        <label>sign up for email updates
+        <input type="checkbox" name="email updates"></label>
+        <label >save my payment detail securely<input type="checkbox" name="save payment"></label>
+    </form>
+    </body></html>
