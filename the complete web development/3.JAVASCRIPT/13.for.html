@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+    for loop
+    </title>
+    
+</head>
+<body>
+    <p id="myParagraph">Javascript</p>
+ <script >
+   for(i=0;i<5;i++){
+       document.getElementById("myParagraph").innerHTML += "<br/>" +i;
+   }
+     for(i=7;i>0;i--){
+         document.getElementById("myParagraph").innerHTML += "<br/>" +Math.pow(i,2);
+     } 
+     var shoppingList=["bread","milk","eggs"];
+     for(i=0;i<shoppingList.length;i++){
+         document.getElementById("myParagraph").innerHTML += "<br/>" +shoppingList[i];
+     }
+       
+    </script>
+</body>
+</html>

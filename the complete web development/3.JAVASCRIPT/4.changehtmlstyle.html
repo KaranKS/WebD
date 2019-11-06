@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>
+    div and span
+    </title>    
+    <style>
+        .bluebox{
+            background-color: blue;
+            color: white;
+            height: 50px;
+        }
+        .yellowbox{
+            background-color: yellow;
+            height: 50px;
+        }
+        .greenbox{
+            background-color: #7fce30;
+            height: 50px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="bluebox" id="facebook">
+            
+            <p>facebook is <span class="great">great</span>.</p>
+        </div>
+            <div class="yellowbox" id="apple">
+        <p>apple.</p>
+            </div>
+            <div class="greenbox" id="microsoft">
+        <p>microsoft</p>
+                </div>
+                <button id="button1">change facebook style</button>
+                <button id="button2">
+                change apple style
+                </button>
+                <script>
+                document.getElementById("button1").onclick=function(){
+                    document.getElementById("facebook").style.width='200px';
+                    document.getElementById("facebook").style.backgroundColor='rgba(26,203,135,0.922)';}
+                    document.getElementById("button2").onclick=function(){
+                        document.getElementById("apple").innerHTML="<ul><li>car</li><li>bike</li></ul>";
+                    }
+                    
+                </script>
+        
+    </body>
+</html>

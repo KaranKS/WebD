@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+     errors
+    </title>
+    <style>
+        #error{
+            color: #d36363;
+        }
+    </style>
+    
+</head>
+<body>
+    <p id="error"></p>
+
+ <script >
+ try{
+     sum(3,4);
+ }
+     catch(err){
+         document.getElementById("error").innerHTML=err.message;
+     }
+
+  
+    </script>
+</body>
+</html>

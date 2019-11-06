@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>
+    change html using variables
+    </title>    
+    <style>
+        .bluebox{
+            background-color: blue;
+            color: white;
+            height: 50px;
+        }
+        .yellowbox{
+            background-color: yellow;
+            height: 50px;
+        }
+        .greenbox{
+            background-color: #7fce30;
+            height: 50px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="bluebox" id="facebook">
+            
+            <p>facebook is <span class="great">great</span>.</p>
+        </div>
+            <div class="yellowbox" id="apple">
+        <p>apple.</p>
+            </div>
+            <div class="greenbox" id="microsoft">
+        <p>microsoft</p>
+                </div>
+                <button id="button1">change facebook style</button>   
+                <button id="button2">
+                change apple style
+                </button>
+                <script>
+               var color='rgb(18,149,68)';
+                    document.getElementById("button1").onclick=function(){
+                        document.getElementById("facebook").style.backgroundColor=color;
+                    }
+                    var x,y,z,appleColor;
+                    document.getElementById("button2").onclick=function(){
+                         x=Math.round(Math.random()*256);
+                         y=Math.round(Math.random()*256);
+                         z=Math.round(Math.random()*256);
+                    appleColor='rgb(' + x + ' , '+ y + ',' + z +')'
+                    document.getElementById("apple").style.backgroundColor=appleColor;
+                        document.getElementById("apple").innerHTML='<p>' + appleColor +'</p>';
+                    }
+                   
+                   
+                    
+                </script>
+        
+    </body>
+</html>
